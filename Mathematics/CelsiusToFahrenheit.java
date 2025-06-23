@@ -35,5 +35,6 @@ public class CelsiusToFahrenheit {
 
         int F = (C * 9/5) + 32;
         System.out.println("In Fahrenheit "+ F);
+        sc.close();
     }
  }

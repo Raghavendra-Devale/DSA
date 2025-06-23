@@ -37,5 +37,6 @@ public class AbsoluteValue {
         if(num < 0 ){ num = -(num); }
         
         System.out.println("Absolute values using inbulit funtion "+abs+" manual "+num);
+        sc.close();
     }
  }
