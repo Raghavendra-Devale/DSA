@@ -12,9 +12,7 @@
  * Output: 5 4
  * Explanation: From the given array elements, 5 is the largest and 4 is the second largest.
  */
-
- package Arrays;
-
+package Arrays.Medium;
 import java.util.ArrayList;
 
 public class MaxAndSecondMax {
