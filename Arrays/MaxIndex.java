@@ -8,6 +8,7 @@ package Arrays;
 public class MaxIndex {
     // Brute force approach here were scanning whole from left to right and if arr[i] element 
     // is lesser than arr[j] element assign the difference between them to result and return
+   
     static int maxIndexDiffBrute(int[] arr){
         int maxxDiff = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -20,6 +21,17 @@ public class MaxIndex {
         return maxxDiff;
     }
 
+
+
+
+
+
+
+
+
+
+
+    
 
     // Optimal approach
     static int maxIndexDiffOptimal(int []arr){
