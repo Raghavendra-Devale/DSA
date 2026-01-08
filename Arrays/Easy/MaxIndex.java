@@ -3,8 +3,8 @@
  * The task is to return the maximum of j - i subjected to 
  * the constraint of arr[i] < arr[j] and i < j.
  */
-package Arrays;
 
+package Arrays.Easy;
 public class MaxIndex {
     // Brute force approach here were scanning whole from left to right and if arr[i] element 
     // is lesser than arr[j] element assign the difference between them to result and return

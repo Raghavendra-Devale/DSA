@@ -21,10 +21,6 @@ package Arrays.Medium;
  * Ex: arr[] = {3,4,1,2,5}; it is not sorted and rotated, here there is a break 3,4,1 there 
  * is break okay then in edge case arr[n-1] = 5 > arr[0] = 3;
  */
-
-
-
-
 public class SortedAndRotated {
 
     public static boolean checkRotatedAndSorted(int arr[], int num) {

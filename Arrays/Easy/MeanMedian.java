@@ -10,7 +10,8 @@
  * Since sorting is covered in later tracks, we have already provided the sort function to you 
  * in the code.
  */
-package Arrays;
+
+package Arrays.Easy;
 
 import java.util.Arrays;
 
