@@ -5,7 +5,7 @@ This index tracks **what I am currently learning**, **what is completed**, and *
 Notes and links will be added **progressively** as topics are completed.
 
 ---
-
+cls
 ## 🧱 Phase 0 — Foundations
 
 | Topic                              | Notes / Links |
