@@ -10,7 +10,7 @@ Notes and links will be added **progressively** as topics are completed.
 
 | Topic                              | Notes / Links                   |
 |-----------------------------------|---------------------------------|
-| 0.1 Input / Output Thinking       | Basics/BASIC.md                 |
+| 0.1 Input / Output Thinking       | [Basics/BASIC.md](https://github.com/Raghavendra-Devale/DSA/blob/main/Basics/BASIC.md)|
 | 0.2 Constraints Awareness         | Basics/CONSTRAINTS_AWARENESS.md |
 | 0.3 Loops, Conditions & Dry Runs  | —                               |
 | 0.4 Pattern Problems (Logic Build)| Basics/Patterns/PATTERNS.md     |
