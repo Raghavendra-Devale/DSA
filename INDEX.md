@@ -8,22 +8,22 @@ Notes and links will be added **progressively** as topics are completed.
 
 ## 🧱 Phase 0 — Foundations
 
-| Topic                              | Notes / Links                   |
-|-----------------------------------|---------------------------------|
-| 0.1 Input / Output Thinking       | Basics/BASIC.md                 |
-| 0.2 Constraints Awareness         | Basics/CONSTRAINTS_AWARENESS.md |
-| 0.3 Loops, Conditions & Dry Runs  | —                               |
-| 0.4 Pattern Problems (Logic Build)| Basics/Patterns/PATTERNS.md     |
+| Topic                              | Notes / Links |
+|-----------------------------------|---------------|
+| 0.1 Input / Output Thinking       | [Basics/BASIC.md](Basics/BASIC.md) |
+| 0.2 Constraints Awareness         | [Basics/CONSTRAINTS_AWARENESS.md](Basics/CONSTRAINTS_AWARENESS.md) |
+| 0.3 Loops, Conditions & Dry Runs  | — |
+| 0.4 Pattern Problems (Logic Build)| [Basics/Patterns/PATTERNS.md](Basics/Patterns/PATTERNS.md) |
 
 ---
 
 ## 🧱 Phase 1 — Core Data Handling
 
-| Topic    | Notes / Links    |
-|---------|------------------|
-| Arrays  | Arrays/ARRAYS.md |
-| Strings | —                |
-| Hashing | —                |
+| Topic    | Notes / Links |
+|---------|---------------|
+| Arrays  | [Arrays/ARRAYS.md](Arrays/ARRAYS.md) |
+| Strings | — |
+| Hashing | — |
 
 ---
 
@@ -31,10 +31,10 @@ Notes and links will be added **progressively** as topics are completed.
 
 | Topic           | Notes / Links |
 |----------------|---------------|
-| Two Pointers   | —             |
-| Sliding Window | —             |
-| Prefix Sum     | —             |
-| Stack          | —             |
+| Two Pointers   | — |
+| Sliding Window | — |
+| Prefix Sum     | — |
+| Stack          | — |
 
 ---
 
@@ -42,9 +42,9 @@ Notes and links will be added **progressively** as topics are completed.
 
 | Topic                      | Notes / Links |
 |---------------------------|---------------|
-| Recursion                 | —             |
-| Trees (DFS / BFS)         | —             |
-| Binary Search (On Answer) | —             |
+| Recursion                 | — |
+| Trees (DFS / BFS)         | — |
+| Binary Search (On Answer) | — |
 
 ---
 
@@ -52,9 +52,9 @@ Notes and links will be added **progressively** as topics are completed.
 
 | Topic         | Notes / Links |
 |--------------|---------------|
-| Heap         | —             |
-| Greedy       | —             |
-| Backtracking | —             |
+| Heap         | — |
+| Greedy       | — |
+| Backtracking | — |
 
 ---
 
@@ -62,8 +62,8 @@ Notes and links will be added **progressively** as topics are completed.
 
 | Topic               | Notes / Links |
 |--------------------|---------------|
-| Graphs             | —             |
-| Dynamic Programming| —             |
+| Graphs             | — |
+| Dynamic Programming| — |
 
 ---
 
