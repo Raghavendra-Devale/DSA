@@ -21,12 +21,14 @@ Organized by topic, based on a comprehensive DSA syllabus:
 - 🧠 Time & Space Complexity  
 - 🌀 Asymptotic Notations (Big O, Θ, Ω)  
 - 🔁 Loop & Recursion Analysis  
+- Basics ([Basics](INDEX.md) )
 
 ### 🔢 Mathematics
 - ➗ GCD, LCM  
 - 🔍 Prime Numbers  
 - 🧮 Sieve of Eratosthenes  
 - ⚡ Fast Power Computation  
+- Mathematics ([Problems](Mathematics/MATHEMATICS.MD))
 
 ### ⚙️ Bit Manipulation
 - 🧩 Bitwise Operators  
@@ -34,11 +36,14 @@ Organized by topic, based on a comprehensive DSA syllabus:
 - 2️⃣ Power of 2 Check  
 - 🕵️ Odd Occurrences  
 
+[//]: # (- Bit manipulation &#40;[Bit Manipulation] &#40;Bit Manipulation/BIT_MANIPULATION.md&#41;&#41;)
+
 ### 🔁 Recursion & Backtracking
 - ! Factorial, Fibonacci  
 - 🧮 Subsets & Permutations  
 - 🗼 Tower of Hanoi  
-- 👑 N-Queens Problem  
+- 👑 N-Queens Problem
+- 
 
 ### 🧮 Arrays
 - 🔄 Rotations  
