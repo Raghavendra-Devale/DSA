@@ -8,12 +8,12 @@ Notes and links will be added **progressively** as topics are completed.
 
 ## 🧱 Phase 0 — Foundations
 
-| Topic                              | Notes / Links               |
-|-----------------------------------|-----------------------------|
-| 0.1 Input / Output Thinking       | Basics/BASICS.md            |
-| 0.2 Constraints Awareness         | Basics/CONSTRAINTS.md       |
-| 0.3 Loops, Conditions & Dry Runs  | Basics/Patterns/PATTERNS.md |
-| 0.4 Pattern Problems (Logic Build)| —                           |
+| Topic                              | Notes / Links                   |
+|-----------------------------------|---------------------------------|
+| 0.1 Input / Output Thinking       | Basics/BASIC.md                 |
+| 0.2 Constraints Awareness         | Basics/CONSTRAINTS_AWARENESS.md |
+| 0.3 Loops, Conditions & Dry Runs  | —                               |
+| 0.4 Pattern Problems (Logic Build)| Basics/Patterns/PATTERNS.md     |
 
 ---
 
@@ -70,9 +70,9 @@ Notes and links will be added **progressively** as topics are completed.
 ### 📌 Notes
 - `—` indicates **planned content**
 - All solutions and notes are written with:
-    - clear intuition
-    - dry runs
-    - edge cases
-    - interview perspective
+  - clear intuition
+  - dry runs
+  - edge cases
+  - interview perspective
 
 This roadmap is designed to go from **zero clarity → strong problem-solving confidence**.
