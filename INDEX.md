@@ -1,79 +1,78 @@
 # 🧭 DSA Index — Zero → Hero
 
-This index tracks **what I am doing now**, **what is completed**, and **what comes next**.
+This index tracks **what I am currently learning**, **what is completed**, and **what comes next** in my Data Structures & Algorithms journey.
 
-Links will be added gradually as topics are completed.
+Notes and links will be added **progressively** as topics are completed.
 
 ---
 
 ## 🧱 Phase 0 — Foundations
 
-| Topic                                   | Status      | Notes / Links |
-|-----------------------------------------|-------------|---------------|
-| 0.1 Input / Output Thinking             | In Progress | |
-| 0.2 Constraints Awareness               | Pending     | |
-| 0.3 Loops, Conditions & Dry Runs        | Pending     | |
-| 0.4 Pattern problems for logic buildin  | Pending     | |
+| Topic                              | Notes / Links               |
+|-----------------------------------|-----------------------------|
+| 0.1 Input / Output Thinking       | Basics/BASICS.md            |
+| 0.2 Constraints Awareness         | Basics/CONSTRAINTS.md       |
+| 0.3 Loops, Conditions & Dry Runs  | Basics/Patterns/PATTERNS.md |
+| 0.4 Pattern Problems (Logic Build)| —                           |
 
 ---
 
 ## 🧱 Phase 1 — Core Data Handling
 
-| Topic | Status | Notes / Links |
-|------|--------|---------------|
-| Arrays | ⬜ Pending | |
-| Strings | ⬜ Pending | |
-| Hashing | ⬜ Pending | |
+| Topic    | Notes / Links    |
+|---------|------------------|
+| Arrays  | Arrays/ARRAYS.md |
+| Strings | —                |
+| Hashing | —                |
 
 ---
 
 ## 🧠 Phase 2 — Pattern Foundations
 
-| Topic | Status | Notes / Links |
-|------|--------|---------------|
-| Two Pointers | ⬜ Pending | |
-| Sliding Window | ⬜ Pending | |
-| Prefix Sum | ⬜ Pending | |
-| Stack | ⬜ Pending | |
+| Topic           | Notes / Links |
+|----------------|---------------|
+| Two Pointers   | —             |
+| Sliding Window | —             |
+| Prefix Sum     | —             |
+| Stack          | —             |
 
 ---
 
 ## 🧩 Phase 3 — Control Flow Mastery
 
-| Topic | Status | Notes / Links |
-|------|--------|---------------|
-| Recursion | ⬜ Pending | |
-| Trees (DFS / BFS) | ⬜ Pending | |
-| Binary Search (On Answer) | ⬜ Pending | |
+| Topic                      | Notes / Links |
+|---------------------------|---------------|
+| Recursion                 | —             |
+| Trees (DFS / BFS)         | —             |
+| Binary Search (On Answer) | —             |
 
 ---
 
 ## ⚙️ Phase 4 — Optimization Thinking
 
-| Topic | Status | Notes / Links |
-|------|--------|---------------|
-| Heap | ⬜ Pending | |
-| Greedy | ⬜ Pending | |
-| Backtracking | ⬜ Pending | |
+| Topic         | Notes / Links |
+|--------------|---------------|
+| Heap         | —             |
+| Greedy       | —             |
+| Backtracking | —             |
 
 ---
 
 ## 🌐 Phase 5 — System-Level DSA
 
-| Topic | Status | Notes / Links |
-|------|--------|---------------|
-| Graphs | ⬜ Pending | |
-| Dynamic Programming | ⬜ Pending | |
+| Topic               | Notes / Links |
+|--------------------|---------------|
+| Graphs             | —             |
+| Dynamic Programming| —             |
 
 ---
 
-## 📌 Status Legend
+### 📌 Notes
+- `—` indicates **planned content**
+- All solutions and notes are written with:
+    - clear intuition
+    - dry runs
+    - edge cases
+    - interview perspective
 
--  Pending
--  In Progress
--  Completed
-
----
-
-### 🔖 Current Focus
-**Phase:** 0.1 — Input / Output Thinking
+This roadmap is designed to go from **zero clarity → strong problem-solving confidence**.
