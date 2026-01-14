@@ -1,50 +1,103 @@
 /*
- * Given an array a[ ] of size N. 
- * The task is to find the median and mean of the array elements. 
- * Mean is average of the numbers and median is the element which is smaller 
- * than half of the elements and greater than remaining half.  
- * If there are odd elements, the median is simply the middle element in the sorted array. 
- * If there are even elements, then the median is floor of average of two middle numbers in the sorted array. 
- * If mean is floating point number, then we need to print floor of it.
- * Note: To find the median, you might need to sort the array. 
- * Since sorting is covered in later tracks, we have already provided the sort function to you 
- * in the code.
- */
+Problem:
+Given an array of size N, find the mean and median of the array.
+
+Definitions:
+- Mean: Average of all elements. If the result is a floating-point value,
+  return its floor.
+- Median:
+  - If N is odd → middle element of the sorted array.
+  - If N is even → floor of the average of the two middle elements.
+
+Note:
+The array must be sorted to calculate the median.
+*/
 
 package Arrays.Easy;
 
 import java.util.Arrays;
 
 public class MeanMedian {
-   /* Median = [(x /n2 + x n2+1)2] floor of average of two middle elements
-    * For {1,3,4,6}, median = ⌊3+4⌋/2= ⌊3.5⌋=3
+
+    /*
+    Median Calculation:
+
+    Approach:
+    1) Sort the array.
+    2) If N is even:
+       - Find the two middle elements.
+       - Return the floor of their average.
+    3) If N is odd:
+       - Return the middle element directly.
+
+    Time Complexity:
+    O(n log n) — due to sorting.
+
+    Auxiliary Space:
+    O(1) — ignoring sort’s internal space.
     */
     public static int median(int A[], int N) {
-        Arrays.sort(A); // first sort array
-        int mid1 = A[N/2 - 1]; // find the mid 1 for even number {1,3,4,6} = (4/2)-1 = 1. index;
-        int mid2 = A[N/2];// finding mid 2 (4/2) = 2. index;
-        double med = 0; 
+        Arrays.sort(A);
+
+        int mid1 = A[N / 2 - 1];
+        int mid2 = A[N / 2];
+        double med = 0;
+
         if (N % 2 == 0) {
-            med = (mid1+mid2)/2.0; // ex: {1,3,4,6} = (3 + 4)/2 = avg(3.5) =3
-            return (int) med; 
-        }else{
-            med = A[N/2]; //  odd number of size return it by dividing / 2 
+            med = (mid1 + mid2) / 2.0;
+            return (int) med;
+        } else {
+            med = A[N / 2];
         }
-       return (int)med;
+        return (int) med;
     }
 
-    // for mean sum all elements and divide by total size return it 
+    /*
+    Mean Calculation:
+
+    Approach:
+    - Sum all elements of the array.
+    - Divide the sum by total number of elements.
+    - Integer division automatically returns the floor.
+
+    Time Complexity:
+    O(n)
+
+    Auxiliary Space:
+    O(1)
+    */
     public static int mean(int A[], int N) {
         int mean = 0;
         for (int i = 0; i < A.length; i++) {
             mean += A[i];
-        }    
-        return mean/N;
+        }
+        return mean / N;
     }
-
 
     public static void main(String[] args) {
-        int arr[] =  {2, 8, 3, 4};
-       System.out.println("mean is "+ mean(arr, arr.length)+"\nMedian "+median(arr, arr.length));        
+        int arr[] = {2, 8, 3, 4};
+        System.out.println("mean is " + mean(arr, arr.length)
+                + "\nMedian " + median(arr, arr.length));
     }
 }
+
+/*
+Dry Run:
+
+Input:
+arr = {2, 8, 3, 4}
+N = 4
+
+Mean Calculation:
+Sum = 2 + 8 + 3 + 4 = 17
+Mean = 17 / 4 = 4
+
+Median Calculation:
+Sorted array = {2, 3, 4, 8}
+Middle elements = 3 and 4
+Median = floor((3 + 4) / 2) = floor(3.5) = 3
+
+Output:
+mean is 4
+Median 3
+*/

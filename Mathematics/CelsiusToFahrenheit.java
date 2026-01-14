@@ -1,32 +1,29 @@
 /*
- * Given a temperature in celsius C. You need to convert the given temperature to Fahrenheit.
-Example 1:
-Input: C = 32
-Output: 89.6
-Explanation: Using the conversion formula of celsius to farhenheit , it can be calculated that, 
-for 32 degree C, the temperature in Fahrenheit = 89.6
+Problem:
+Given a temperature in Celsius (C), convert it into Fahrenheit.
 
-Example 2:
-Input: 50
-Output: 122
-Explanation: Using the conversion formulaof celsius to farhenheit, it can be calculated that, 
-for 50 degree C, the temperature in Fahrenheit = 122.
-Your Task: Your task is to complete the function CtoF() that takes C as parameter and returns temperature in fahrenheit( in double). The flooring and printing is automatically done by the driver code.
+Approach:
+The problem is solved using the standard temperature conversion formula:
+Fahrenheit = (Celsius × 9/5) + 32
 
-Expected Time Complexity: O(1)
-Expected Auxiliary Space : O(1)
+- The input temperature is read in Celsius.
+- The formula is applied directly to compute the temperature in Fahrenheit.
+- Since only a constant number of arithmetic operations are performed,
+  the solution runs in constant time and space.
 
-Constraints:
-1 <= C <= 104
- */
+Time Complexity:
+O(1) — single arithmetic calculation.
 
+Auxiliary Space:
+O(1) — no extra space used.
+*/
 
- // Formula to convert F=(C* 9/5)+32;
+// Formula to convert Fahrenheit = (C * 9/5) + 32
 
 import java.util.Scanner;
 
 public class CelsiusToFahrenheit {
- 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -37,4 +34,24 @@ public class CelsiusToFahrenheit {
         System.out.println("In Fahrenheit "+ F);
         sc.close();
     }
- }
+}
+
+/*
+Dry Run:
+
+Input:
+C = 32
+
+Step 1:
+Read input value C = 32
+
+Step 2:
+Apply formula:
+F = (32 * 9/5) + 32
+F = (288 / 5) + 32
+F = 57 + 32
+F = 89
+
+Output:
+In Fahrenheit 89
+*/

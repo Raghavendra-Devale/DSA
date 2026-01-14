@@ -1,30 +1,30 @@
 /*
- * You are given an interger I, find the absolute value of the integer I.
- * Example 1:
- * Input:I = -32
- * Output: 32
- * Explanation: 
- * The absolute value of -32 is 32.
- * 
- * Example 2:
- * Input: I = 45
- * Output: 45
- * Explanation: 
- * The absolute value of 45 is 45 itself.
- * Your Task: Your task is to complete the function absolute() which takes an integer I 
- * as input parameter and return the absolute value of I.
- * Expected Time Complexity: O(1)
- * Expected Auxiliary Space : O(1)
- * Constraints:-106 <= I <= 106
- * link: 
- */
+Problem:
+You are given an integer I. Find and return the absolute value of the integer.
 
- 
+Approach:
+Two approaches are demonstrated in this solution:
+
+1) Using Java's built-in function Math.abs():
+   - Math.abs(num) directly returns the absolute value of the given integer.
+
+2) Manual approach using condition:
+   - If the number is negative (num < 0), multiply it by -1.
+   - If the number is positive or zero, it remains unchanged.
+
+Both approaches run in constant time and use constant space.
+
+Time Complexity:
+O(1) — only simple comparisons and assignments.
+
+Auxiliary Space:
+O(1) — no extra data structures are used.
+*/
 
 import java.util.Scanner;
 
 public class AbsoluteValue {
- 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number ");
@@ -35,8 +35,33 @@ public class AbsoluteValue {
 
         //Absolute value Manually
         if(num < 0 ){ num = -(num); }
-        
+
         System.out.println("Absolute values using inbulit funtion "+abs+" manual "+num);
         sc.close();
     }
- }
+}
+
+/*
+Dry Run:
+
+Input:
+-32
+
+Step 1:
+num = -32
+
+Step 2:
+abs = Math.abs(-32)
+abs becomes 32
+
+Step 3:
+Check if num < 0
+-32 < 0 → true
+
+Step 4:
+num = -(-32)
+num becomes 32
+
+Output:
+Absolute values using inbulit funtion 32 manual 32
+*/

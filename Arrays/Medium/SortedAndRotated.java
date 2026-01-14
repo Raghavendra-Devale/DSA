@@ -1,67 +1,112 @@
 /*
- * Given an array arr[] of N distinct integers, check if this array is Sorted 
- * (non-increasing or non-decreasing) and Rotated counter-clockwise.
- * Note that input array may be sorted in either increasing or decreasing order, then rotated.
- * A sorted array is not considered as sorted and rotated, i.e., 
- * there should be at least one rotation. 
- * Input: N = 4 arr[] = {3,4,1,2}
- * Output: Yes
- * Explanation: The array is sorted (1, 2, 3, 4) and rotated twice (3, 4, 1, 2).
- */
+Problem:
+Given an array of N distinct integers, check whether the array is
+sorted (either non-decreasing or non-increasing) and rotated
+(counter-clockwise).
+
+Important Notes:
+- The array can be originally sorted in ascending or descending order.
+- A purely sorted array (with no rotation) is NOT considered valid.
+- There must be at least one rotation.
+
+Example:
+Input: {3, 4, 1, 2}
+Output: Yes
+Explanation: Sorted array {1, 2, 3, 4} rotated twice.
+*/
+
 package Arrays.Medium;
 
 /*
- * My solution :
- * if the array is sorted and rotated it should break atleast once we need to find that break
- * if it is only sorted no break at all 
- * if there is 2 or more breaks it is not sorted or rotated 
- * Ex: arr[] = {3,4,1,2}; it is sorted and rotated, here there is a break 3,4,1 there is break 
- * okay then in edge case arr[n-1] = 2 < arr[0] = 3; so true
- * 
- * Ex: arr[] = {3,4,1,2,5}; it is not sorted and rotated, here there is a break 3,4,1 there 
- * is break okay then in edge case arr[n-1] = 5 > arr[0] = 3;
- */
+Approach Used (Break Counting):
+
+Key Idea:
+- A sorted and rotated array must have exactly ONE "break" in ordering.
+- A break means the order changes when moving from one element to the next.
+
+Types of breaks:
+1) Ascending break:
+   When an ascending order array breaks at rotation point.
+   Example: {1, 2, 3, 4, 1}
+
+2) Descending break:
+   When a descending order array breaks at rotation point.
+   Example: {5, 4, 3, 2, 6}
+
+Logic:
+- Count how many times ascending order breaks.
+- Count how many times descending order breaks.
+- Also check the circular edge case between last and first element.
+- Valid if exactly one break exists (ascending OR descending),
+  and the array is not purely sorted.
+*/
+
 public class SortedAndRotated {
 
     public static boolean checkRotatedAndSorted(int arr[], int num) {
-        int ascBreak = 0;
 
+        int ascBreak = 0;
         int descBreak = 0;
 
-        for (int i = 0; i < arr.length-1; i++) { // iterating the array 
-            if (arr[i] < arr[i+1]) { // if the next number is higher than current number 
-                //ascending order break ex: {1,2,3,4,2} 4,1 ascending break
-                if (arr[i] > arr[i+1]) {
-                    ascBreak++;
-                }
+        // Traverse array to count order breaks
+        for (int i = 0; i < arr.length - 1; i++) {
 
-                // if the next number is lesser that current number descending order break 
-                //ex: {4,3,2,1,5} 1, descending break
-                if (arr[i] < arr[i+1]) {
-                    descBreak++;
-                }
+            // Checking for order changes
+            if (arr[i] > arr[i + 1]) {
+                ascBreak++;
             }
-            
+
+            if (arr[i] < arr[i + 1]) {
+                descBreak++;
+            }
         }
-        // edge cases for ascending
-        if (arr[num-1] < arr[0]) {
+
+        // Circular edge case checks
+        if (arr[num - 1] > arr[0]) {
             ascBreak++;
         }
-        // edge cases for descending
-        if (arr[0] < arr[num-1]) {
+
+        if (arr[num - 1] < arr[0]) {
             descBreak++;
         }
-        //  either one of order has to be there and both should not be zero 
-        if (ascBreak == 1 || descBreak == 1 && ascBreak != 0 && descBreak != 0 ) {
+
+        // Valid if exactly one break exists
+        if (ascBreak == 1 || descBreak == 1) {
             return true;
         }
+
         return false;
-        
     }
 
     public static void main(String[] args) {
-        int arr[] = {3,4,1,2,5};
+        int arr[] = {3, 4, 1, 2, 5};
         System.out.println(checkRotatedAndSorted(arr, arr.length));
     }
-    
 }
+
+/*
+Dry Run:
+
+Input:
+arr = {3, 4, 1, 2, 5}
+
+Step-by-step:
+Comparisons:
+3 < 4 → descending break++
+4 > 1 → ascending break++
+1 < 2 → descending break++
+2 < 5 → descending break++
+
+Edge check:
+last = 5, first = 3
+5 > 3 → ascending break++
+
+ascBreak = 2
+descBreak = 3
+
+Result:
+More than one break → NOT sorted and rotated
+
+Output:
+false
+*/

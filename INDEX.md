@@ -7,12 +7,12 @@ Notes and links will be added **progressively** as topics are completed.
 ---
 ## 🧱 Phase 0 — Foundations
 
-| Topic                              | Notes / Links                                                      |
-|-----------------------------------|--------------------------------------------------------------------|
-| 0.1 Input / Output Thinking       | [Basics/BASIC.md](Basics/BASIC.md)                                 |
-| 0.2 Constraints Awareness         | [Basics/CONSTRAINTS_AWARENESS.md](Basics/CONSTRAINTS_AWARENESS.md) |
-| 0.3 Loops, Conditions & Dry Runs  | [Basics/LOOPS_CONDITIONS_&_DRYRUNS](LOOPS_CONDITIONS_&_DRYRUNS.md) |
-| 0.4 Pattern Problems (Logic Build)| [Basics/Patterns/PATTERNS.md](Basics/Patterns/PATTERNS.md)         |
+| Topic                              | Notes / Links                                                             |
+|-----------------------------------|---------------------------------------------------------------------------|
+| 0.1 Input / Output Thinking       | [Basics/BASIC.md](Basics/BASIC.md)                                        |
+| 0.2 Constraints Awareness         | [Basics/CONSTRAINTS_AWARENESS.md](Basics/CONSTRAINTS_AWARENESS.md)        |
+| 0.3 Loops, Conditions & Dry Runs  | [Basics/LOOPS_CONDITIONS_&_DRYRUNS](Basics/LOOPS_CONDITIONS_&_DRYRUNS.md) |
+| 0.4 Pattern Problems (Logic Build)| [Basics/Patterns/PATTERNS.md](Basics/Patterns/PATTERNS.md)                |
 
 ---
 
