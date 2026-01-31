@@ -21,7 +21,7 @@ Notes and links will be added **progressively** as topics are completed.
 | Topic    | Notes / Links                        |
 |---------|--------------------------------------|
 | Arrays  | [Arrays/ARRAYS.md](Arrays/ARRAYS.md) |
-| Strings | [Strings/STRINGS.md](STRINGS.md)     |
+| Strings | [Strings/STRINGS.md](Strings/STRINGS.md)     |
 | Hashing | [Hashing/HASHING.md](HASHING.md)     |
 
 ---
