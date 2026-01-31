@@ -21,7 +21,7 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
-        String str = "RAMAR";
+        String str = "Rama";
         revrseString(str);
     }
 }
