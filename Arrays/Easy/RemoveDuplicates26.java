@@ -1,5 +1,5 @@
 /*
-LeetCode Problem 26:
+LeetCode Problem 26
 Remove Duplicates from Sorted Array
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
@@ -10,6 +10,7 @@ Return the number of unique elements.
 
 Constraints:
 - The array is sorted.
+- Must modify the array in-place.
 - Extra space is not allowed.
 */
 
@@ -18,70 +19,99 @@ package Arrays.Easy;
 public class RemoveDuplicates26 {
 
     /*
-    Approach (Two Pointers):
+    ------------------------------------------------------------
+    Brute Force Approach (Shifting Method)
 
     Idea:
-    - Use two pointers i and j.
-    - Pointer i keeps track of the index of the last unique element.
-    - Pointer j scans the array from left to right.
+    - Since the array is sorted, duplicates are adjacent.
+    - When nums[i] == nums[i + 1]:
+        • Shift all elements to the left.
+        • Reduce effective size.
+        • Recheck the same index.
 
-    Steps:
-    1) Initialize i = 0 (first element is always unique).
-    2) Start j from index 1.
-    3) If arr[i] != arr[j]:
-       - Increment i
-       - Copy arr[j] to arr[i]
-    4) After traversal, i + 1 gives the count of unique elements.
+    Time Complexity:
+    O(n^2)
+
+    Auxiliary Space:
+    O(1)
+    ------------------------------------------------------------
+    */
+    public static int removeDuplicatesBrute(int[] nums) {
+
+        int n = nums.length;
+
+        for (int i = 0; i < n - 1; i++) {
+
+            if (nums[i] == nums[i + 1]) {
+
+                // Shift elements left
+                for (int j = i + 1; j < n - 1; j++) {
+                    nums[j] = nums[j + 1];
+                }
+
+                n--;   // Reduce effective size
+                i--;   // Recheck current index
+            }
+        }
+
+        return n;
+    }
+
+
+    /*
+    ------------------------------------------------------------
+    Optimal Approach (Two Pointers)
+
+    Idea:
+    - Use two pointers:
+        i → points to last unique element
+        j → scans the array
+    - If nums[j] != nums[i]:
+        • Move i forward
+        • Copy nums[j] to nums[i]
 
     Time Complexity:
     O(n)
 
     Auxiliary Space:
     O(1)
+    ------------------------------------------------------------
     */
-    public static int ContainsDuplicate(int[] arr) {
-        if (arr.length == 0) {
+    public static int removeDuplicatesOptimal(int[] nums) {
+
+        if (nums.length == 0) {
             return 0;
         }
 
         int i = 0;
-        for (int j = 1; j < arr.length; j++) {
-            if (arr[i] != arr[j]) {
-                arr[i + 1] = arr[j];
+
+        for (int j = 1; j < nums.length; j++) {
+
+            if (nums[j] != nums[i]) {
                 i++;
+                nums[i] = nums[j];
             }
         }
+
         return i + 1;
     }
 
+
+   
     public static void main(String[] args) {
-        System.out.println(ContainsDuplicate(new int[]{1, 1, 1, 1, 1, 1}));
+
+        int[] arr1 = {1, 1, 2, 2, 3};
+        int[] arr2 = {1, 1, 2, 2, 3};
+
+        int bruteResult = removeDuplicatesBrute(arr1);
+        int optimalResult = removeDuplicatesOptimal(arr2);
+
+        System.out.println("Brute Unique Count: " + bruteResult);
+        System.out.println("Optimal Unique Count: " + optimalResult);
+
+        System.out.print("Modified Array (Optimal): ");
+        for (int i = 0; i < optimalResult; i++) {
+            System.out.print(arr2[i] + " ");
+        }
     }
 }
-
-/*
-Dry Run:
-
-Input:
-arr = [1, 1, 1, 1, 1, 1]
-
-Initial:
-i = 0
-
-j = 1 → arr[0] == arr[1] → skip
-j = 2 → arr[0] == arr[2] → skip
-j = 3 → arr[0] == arr[3] → skip
-j = 4 → arr[0] == arr[4] → skip
-j = 5 → arr[0] == arr[5] → skip
-
-Final i = 0
-
-Unique elements count:
-i + 1 = 1
-
-Array after operation:
-[1, _, _, _, _, _]
-
-Output:
-1
-*/
