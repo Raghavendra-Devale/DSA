@@ -201,6 +201,39 @@ Important Detail:
 Do NOT increment pointer immediately after swap.
 
 ---
+6️⃣ Two Sum II – Input Array Is Sorted (LeetCode 167)
+
+Pattern: Converging Two Pointers
+
+Time: O(n)
+Space: O(1)
+
+Core Idea:
+Use sorted property to eliminate half the search space each step.
+
+Invariant:
+
+Search space = [left, right]
+Array is sorted in non-decreasing order.
+
+Pointer Movement Logic:
+
+If sum < target → left++
+
+If sum > target → right--
+
+If sum == target → return indices
+
+Why It Works:
+Sorted order provides monotonic guarantee:
+
+Moving left increases sum
+
+Moving right decreases sum
+
+Why It Would Fail If Unsorted:
+No monotonic behavior → cannot safely eliminate search space.
+---
 
 # 4️⃣ Pattern Evolution Roadmap
 
