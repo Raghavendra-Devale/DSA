@@ -175,7 +175,9 @@ m = number of nodes in list2
         list2.next = new ListNode(4);
         list2.next.next = new ListNode(6);
 
-        mergeTwoLists(list1, list2);
+        ListNode result = mergeTwoLists(list1, list2);
+        System.out.println(result);
+
     }
 }
 
