@@ -200,7 +200,7 @@ Final Output
 
     public static void reverseStringRec(char[] s) {
 
-        reverse(s, 0, s.length - 1);
+        reverseRec(s, 0, s.length - 1);
 
         System.out.println(s);
     }
