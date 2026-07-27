@@ -107,34 +107,44 @@ Each entry links directly to the corresponding Java file.
 
 ## 🧱 Basics
 
-| # | Problem | Concept | Link |
-|---|--------|--------|------|
-| 1 | Insert At End | Basic insertion | [InsertAtEnd](Basics/InsertAtEnd.java) |
-| 2 | Insert At Index | Shifting elements | [InsertAtIndex](Basics/InsertAtIndex.java) |
-| 3 | Reverse In Groups | Reversal logic | [ReverseInGroups](Basics/ReverseInGroups.java) |
+| # | LC # | Problem | Concept | Link |
+|---|------|--------|--------|------|
+| 1 | — | Insert At End | Basic insertion | [InsertAtEnd](Basics/InsertAtEnd.java) |
+| 2 | — | Insert At Index | Shifting elements | [InsertAtIndex](Basics/InsertAtIndex.java) |
+| 3 | 88 | Merge Sorted Arrays | Two Pointers / Merge | [MergeSortedArrays88](Basics/MergeSortedArrays88.java) |
+| 4 | — | Reverse In Groups | Reversal logic | [ReverseInGroups](Basics/ReverseInGroups.java) |
 
 ---
 
 ## 🟢 Easy
 
-| # | Problem | Concept | Link |
-|---|--------|--------|------|
-| 1 | Contains Duplicate II | Hashing / Index tracking | [ContainsDuplicateII](Easy/ContainsDuplicateII.java) |
-| 2 | Max Index | Traversal / comparison | [MaxIndex](Easy/MaxIndex.java) |
-| 3 | Mean & Median | Math + sorting | [MeanMedian](Easy/MeanMedian.java) |
-| 4 | Remove Duplicates (LC 26) | Two pointers | [RemoveDuplicates26](Easy/RemoveDuplicates26.java) |
+| # | LC # | Problem | Concept | Link |
+|---|------|--------|--------|------|
+| 1 | 217 | Contains Duplicate | HashSet | [ContainsDuplicate217](Easy/ContainsDuplicate217.java) |
+| 2 | 219 | Contains Duplicate II | Hashing / Index tracking | [ContainsDuplicateII](Easy/ContainsDuplicateII.java) |
+| 3 | — | Max Index | Traversal / comparison | [MaxIndex](Easy/MaxIndex.java) |
+| 4 | 643 | Maximum Average Subarray I | Fixed Sliding Window | [MaximumAverageSubArrayI643](Easy/MaximumAverageSubArrayI643.java) |
+| 5 | — | Mean & Median | Math + sorting | [MeanMedian](Easy/MeanMedian.java) |
+| 6 | 283 | Move Zeroes | Two pointers | [MoveZeroes283](Easy/MoveZeroes283.java) |
+| 7 | 26 | Remove Duplicates from Sorted Array | Two pointers | [RemoveDuplicates26](Easy/RemoveDuplicates26.java) |
+| 8 | 27 | Remove Element | Two pointers / in-place | [RemoveElement27](Easy/RemoveElement27.java) |
+| 9 | 977 | Squares of a Sorted Array | Two pointers | [SquaresOfSortedArray977](Easy/SquaresOfSortedArray977.java) |
 
 ---
 
 ## 🟡 Medium
 
-| # | Problem | Concept | Link |
-|---|--------|--------|------|
-| 1 | Container With Most Water (LC 11) | Two pointers | [ContainerWithMostWater11](Medium/ContainerWithMostWater11.java) |
-| 2 | Max and Second Max | Traversal | [MaxAndSecondMax](Medium/MaxAndSecondMax.java) |
-| 3 | Remove Element (LC 27) | Two pointers / in-place | [RemoveElement27](Medium/RemoveElement27.java) |
-| 4 | Search in Rotated Sorted Array (LC 33) | Binary search | [SearchInRotatedArray](Medium/SearchInRotatedArray.java) |
-| 5 | Sorted and Rotated Check | Array properties | [SortedAndRotated](Medium/SortedAndRotated.java) |
+| # | LC # | Problem | Concept | Link |
+|---|------|--------|--------|------|
+| 1 | 40 | Combination Sum II | Backtracking | [CombinationSumII40](Medium/CombinationSumII40.java) |
+| 2 | 11 | Container With Most Water | Two pointers | [ContainerWithMostWater11](Medium/ContainerWithMostWater11.java) |
+| 3 | — | Max and Second Max | Traversal | [MaxAndSecondMax](Medium/MaxAndSecondMax.java) |
+| 4 | 209 | Minimum Size Subarray Sum | Variable Sliding Window | [MinimumSizeSubarraySum209](Medium/MinimumSizeSubarraySum209.java) |
+| 5 | 1343 | Num of Sub-arrays of Size K and Avg >= Threshold | Fixed Sliding Window | [NumOfSubArrays1343](Medium/NumOfSubArrays1343.java) |
+| 6 | 27 | Remove Element | Two pointers / in-place | [RemoveElement27](Medium/RemoveElement27.java) |
+| 7 | 33 | Search in Rotated Sorted Array | Binary search | [SearchInRotatedArray](Medium/SearchInRotatedArray.java) |
+| 8 | — | Sorted and Rotated Check | Array properties | [SortedAndRotated](Medium/SortedAndRotated.java) |
+| 9 | 167 | Two Sum II — Input Array Is Sorted | Two pointers | [TwoSum_II](Medium/TwoSum_II.java) |
 
 ---
 

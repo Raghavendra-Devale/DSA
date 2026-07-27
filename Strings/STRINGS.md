@@ -23,16 +23,17 @@ All solutions are implemented in **Java**.
 
 > Goal: Become **comfortable manipulating strings**
 
-| Problem Name                  | Implementation |
-|------------------------------|----------------|
-| Character Count              | `CharacterCount.java` |
-| Count Occurrence             | `CountOccurrence.java` |
-| Convert Opposite Case        | `ConvertOppositecase.java` |
-| Count Alpha / Num / Special  | `CountOfAlpha_Num_Special.java` |
-| Reverse String               | `ReverseString.java` |
-| Palindrome Check             | `PalindromeString.java` |
-| String Addition              | `StringAddition.java` |
-| Count Vowels in Sentence     | `Vowels_In_Sentence.java` |
+| # | LC # | Problem Name | Implementation |
+|---|------|-------------|----------------|
+| 1 | — | Character Count | [CharacterCount.java](basics/CharacterCount.java) |
+| 2 | — | Count Occurrence | [CountOccurrence.java](basics/CountOccurrence.java) |
+| 3 | — | Convert Opposite Case | [ConvertOppositecase.java](basics/ConvertOppositecase.java) |
+| 4 | — | Count Alpha / Num / Special | [CountOfAlpha_Num_Special.java](basics/CountOfAlpha_Num_Special.java) |
+| 5 | — | Reverse String | [ReverseString.java](basics/ReverseString.java) |
+| 6 | — | Palindrome Check | [PalindromeString.java](basics/PalindromeString.java) |
+| 7 | — | String Addition | [StringAddition.java](basics/StringAddition.java) |
+| 8 | — | Count Vowels in Sentence | [Vowels_In_Sentence.java](basics/Vowels_In_Sentence.java) |
+| 9 | 125 | Valid Palindrome | [ValidPalindrome125.java](easy/ValidPalindrome125.java) |
 
 ---
 
@@ -40,13 +41,14 @@ All solutions are implemented in **Java**.
 
 > Goal: Recognize **patterns** and handle edge cases
 
-| Problem Name            | Implementation |
-|------------------------|----------------|
-| Remove Duplicates      | `RemoveDuplicate.java` |
-| Roman to Integer       | `RomanToInteger18.java` |
-| String Rotation        | ⏳ |
-| Anagram Check          | ⏳ |
-| Longest Word in String | ⏳ |
+| # | LC # | Problem Name | Implementation |
+|---|------|-------------|----------------|
+| 1 | — | Remove Duplicates | [RemoveDuplicate.java](basics/RemoveDuplicate.java) |
+| 2 | 13 | Roman to Integer | [RomanToInteger18.java](easy/RomanToInteger18.java) |
+| 3 | 1456 | Maximum Number of Vowels in a Substring | [MaxVowelsInASubString1456.java](medium/MaxVowelsInASubString1456.java) |
+| 4 | — | String Rotation | ⏳ Planned |
+| 5 | — | Anagram Check | ⏳ Planned |
+| 6 | — | Longest Word in String | ⏳ Planned |
 
 ---
 
